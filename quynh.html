@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="main.css" /> -->
+  </head>
+  <style>
+    body{
+    background-color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.heart,p{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.heart :hover{
+  color: aquamarine;
+}
+i{
+    
+    color: #000;
+    font-size:500px;
+    text-shadow:0 0 10px rgb(225, 0, 255), 0 0 50px rgb(63, 152, 3);
+    animation: heartbeat 2.0s linear infinite;
+}
+@keyframes heartbeat {
+    0%{
+        transform: scale(1.10);
+    }
+    30%{
+        transform: scale(1.4);
+    }
+    60%{
+        transform: scale(1.9);
+    }
+}
+@keyframes heartbeat1 {
+    0%{
+        transform: scale(1.10);
+    }
+    30%{
+        transform: scale(1.4);
+    }
+    60%{
+        transform: scale(1.6);
+    }
+}
+/* <p style="color: white; font-size: 40px;">Quỳnh Bếu</p> */
+  </style>
+  <body>
+    <div class="heart">
+      <i class="fa-solid fa-heart"></i>
+      <div class="heart">
+        <i class="fa-solid fa-heart"></i>
+        <div>
+          <div class="heart">
+            <i class="fa-solid fa-heart"></i>
+            <div>
+              <p style="color: white; font-size: 40px;">Quỳnh Bếu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
